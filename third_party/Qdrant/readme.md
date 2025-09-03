@@ -16,14 +16,6 @@ This notebook demonstrates how to use **Mistral OCR** to extract text from docum
 
 You’ll need credentials for both **Mistral** and **Qdrant**.
 
-### Mistral
-1. Sign up at [Mistral](https://mistral.ai)  
-2. Create an API key in the console  
-3. Set it as an environment variable:
-   ```bash
-   export MISTRAL_API_KEY=your_mistral_key
-   ```
-
 ### Qdrant Cloud
 1. Create a cluster at [Qdrant Cloud](https://cloud.qdrant.io)  
 2. Generate an API key in the cluster’s **API Keys** section  
@@ -33,18 +25,13 @@ You’ll need credentials for both **Mistral** and **Qdrant**.
    export QDRANT_API_KEY="your_qdrant_key"
    ```
 
-### Qdrant Local (Optional)
-Run with Docker:
-```bash
-docker run -p 6333:6333 -v $(pwd)/qdrant_storage:/qdrant/storage qdrant/qdrant
-```
-
-Set only the URL:
-```bash
-export QDRANT_URL="http://localhost:6333"
-```
-*(no API key required)*
-
+### Mistral
+1. Sign up at [Mistral](https://mistral.ai)  
+2. Create an API key in the console  
+3. Set it as an environment variable:
+   ```bash
+   export MISTRAL_API_KEY=your_mistral_key
+   ```
 ---
 
 ## Setup
